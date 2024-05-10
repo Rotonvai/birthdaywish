@@ -13,12 +13,34 @@ body{
     font-style: italic;
     -ms-text-size-adjust: 10px;
 }
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    position: center;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
  </style>
 
    
 <title>Happy Birthday!</title>
 </head>
 <body background="black">
+    <button id="darkModeToggle" onclick="toggleDarkMode()"> Click Here </button>
+    <script>
+        function toggleDarkMode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+          
+          // Hide the button after clicking
+          document.getElementById('darkModeToggle').style.display = 'none';
+        }
+        </script>
 <h1>Happy Birthday, ........!</h1>
 <p>Wishing you a day filled with joy, laughter, and all the things that make you happy.</p>
 <p> May your special day be filled with joy, laughter, and unforgettable moments.<br> Here's to another year of amazing adventures, cherished memories, and dreams coming true!<br> Wishing you all the happiness and success in the world on your birthday and always.!</p>
